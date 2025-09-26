@@ -1,21 +1,19 @@
 # PYTHON基础库
-import math  # 数学计算库
+
 
 # 数值计算库
+import matplotlib
 import numpy as np
 from numpy import random  # 随机数库
 
 # 绘图库
 from matplotlib import pyplot as plt
-import matplotlib as mpl
 from matplotlib import font_manager  # 字体管理库
 
 # 全局绘图设置
 font_path = r"F:\OneDrive\文档\Fonts\times+simsun.ttf"
 font_manager.fontManager.addfont(font_path)  # 添加字体
 prop = font_manager.FontProperties(fname=font_path)  # 设置字体属性
-
-# 配置字典
 config = {
     "font.family": 'sans-serif',  # 设置全局字体
     "font.sans-serif": prop.get_name(),
@@ -30,14 +28,14 @@ config = {
     "figure.figsize": (12,5),  # 默认图形大小，12cm x 5cm
     "figure.dpi": 100,  # 显示分辨率
     "savefig.dpi": 600,  # 保存分辨率
-    "axes.prop_cycle": mpl.cycler(color=[
+    "axes.prop_cycle": matplotlib.cycler(color=[
         "#1f77b4",  # 蓝
         "#ff7f0e",  # 橙
         "#2ca02c",  # 绿
         "#d62728",  # 红
-        "#9467bd",  # 紫
+        "#a77ece",  # 紫
         "#8c564b",  # 棕
-        "#e377c2",  # 粉
+        "#520e8e",  # 粉
         "#7f7f7f",  # 灰
         "#bcbd22",  # 橄榄
         "#17becf"   # 青
